@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Fuentes Utilizadas
+
+font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Subrayada', sans-serif;
+*/
+
+/* Grid HTML Index*/
+
+#bodyIndex{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: repeat(5, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    justify-content: space-evenly;
+    width: 100%;
+    grid-template-areas: 
+    "header"
+    "slider"
+    "main"
+    "main"
+    "foot";
+    }
+
+@media screen and (max-width: 576px){
+    #bodyIndex{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5 1px);
+        grid-template-areas:
+        "header"
+        "slider"
+        "main"
+        "main"
+        "foot";
+    }
+}
+
+/* Grid HTML Consultas*/
+
+#bodyConsultas{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: repeat(6, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    justify-content: space-evenly;
+    width: 100%;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "main main"
+    "form preg"
+    "form preg"
+    "foot foot";
+    }
+
+@media screen and (max-width: 576px){
+    #bodyConsultas{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5 1px);
+        grid-template-areas:
+        "header"
+        "main"
+        "preg"
+        "form"
+        "foot";
+    }
+}
+    
+
+.foot{
+    background-color: black;
+    grid-area: foot;
+    padding: 10px;
+}
+.pregConsultas{
+    grid-area: preg;
+    background-color: aqua;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-self: center;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    width: 80%;
+
+}
+.formularioConsultas{
+    grid-area: form;
+    background-color: rebeccapurple;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-self: center;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    width: 80%;
+}
+.header{
+    grid-area: header;
+    background-color: yellow;
+    padding: 10px;
+}
+.mainConsultas{
+    background-color: blue;
+    grid-area: main;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+}
+.mainIndex{
+    background-color: blue;
+    grid-area: main;
+    padding: 5px;
+    margin: 10px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;  
+}
+.imag{
+    background-color: aqua;
+    grid-area: slider;
+    padding: 5px;
+    margin: 10px 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+
+    justify-content: center; 
+    
+}
+
+#slideImage{
+    height: 200px;
+    width: 100%;
+}
+
+
+
+.mySlides {
+    display: none;
+  }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dotContainer {
+    text-align:center
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/* Navbar */
+
+.headerContainer{
+    background-color: white;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.logo{
+    width: 130px;
+    cursor: pointer;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: 900;
+    cursor: pointer;
+    color: rgb(51, 51, 51);
+}
+
+/* Efectos de la Navbar */
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #119822;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+
+/* Formulario Consultas.HTML */ 
+
+#contacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+#botonContacto{
+    margin: 0px 15px;
+    background-color: gray;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.itemForm50{
+    margin: 10px 10px;
+    background-color: bisque;
+    border:solid black;
+    padding: 10px;
+    align-items: center;
+    width: 45%;
+}
+
+.itemForm100{
+    margin: 10px 10px;
+    background-color: bisque;
+    border:solid black;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500px;
+}
+
+/* Preguntas Frecuentes Consultas.HTML */ 
+
+.preguntaFrecuente{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: black;
+    margin: 0px 20px;
+    background-color: #B7EFC5;
+}
+
+/*Listado de Imágenes*/
+
+.listadoImagenes{
+    margin: 10px 30px;
+    width: 200px;
+    border: solid red;
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+}
+
+.imagenListadoImagenes{
+    width: 150px;
+    height: 150px;
+}
+
+/*Platillos Index*/
+
+.listadoPlatillos{
+    margin: 10px 5px;
+    width: 300px;
+    border: solid red;
+    overflow: hidden;
+    display: inline-block;
+    text-align: left;
+}
+
+.imagenPlatillo{
+    width: 300px;
+    height: 175px;
+}
+
+/* Genéricos */
+
+legend{
+    margin: 10px 20px;
+    color: black;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: black;
+    margin: 5px 5px;
+    width: 100%;
+}
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: black;
+    margin: 5px 5px;
+    width: 100%;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: black;
+    margin: 5px 5px;
+}
+h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: black;
+    margin: 5px 5px;
+}
