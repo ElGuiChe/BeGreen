@@ -8,9 +8,9 @@
 
 font-family: 'Montserrat', sans-serif;
 font-family: 'Montserrat Subrayada', sans-serif;
-*/
 
-/* Grid HTML Index*/
+
+/* Grid HTML Index
 
 #bodyIndex{
     display: grid;
@@ -41,7 +41,7 @@ font-family: 'Montserrat Subrayada', sans-serif;
     }
 }
 
-/* Grid HTML Consultas*/
+/* Grid HTML Consultas
 
 #bodyConsultas{
     display: grid;
@@ -74,11 +74,7 @@ font-family: 'Montserrat Subrayada', sans-serif;
 }
     
 
-.foot{
-    background-color: black;
-    grid-area: foot;
-    padding: 10px;
-}
+
 .pregConsultas{
     grid-area: preg;
     background-color: aqua;
@@ -196,7 +192,7 @@ font-family: 'Montserrat Subrayada', sans-serif;
     to {opacity: 1}
   }
 
-/* Navbar */
+/* Navbar 
 
 .headerContainer{
     background-color: white;
@@ -237,7 +233,7 @@ font-family: 'Montserrat Subrayada', sans-serif;
     color: rgb(51, 51, 51);
 }
 
-/* Efectos de la Navbar */
+/* Efectos de la Navbar 
 
 .navbar ul li::before {
     content: "";
@@ -255,7 +251,7 @@ font-family: 'Montserrat Subrayada', sans-serif;
     opacity: 1;
 }
 
-/* Formulario Consultas.HTML */ 
+/* Formulario Consultas.HTML 
 
 #contacto{
     display: flex;
@@ -292,7 +288,7 @@ font-family: 'Montserrat Subrayada', sans-serif;
     font-weight: 500px;
 }
 
-/* Preguntas Frecuentes Consultas.HTML */ 
+/* Preguntas Frecuentes Consultas.HTML 
 
 .preguntaFrecuente{
     font-family: 'Montserrat', sans-serif;
@@ -302,7 +298,7 @@ font-family: 'Montserrat Subrayada', sans-serif;
     background-color: #B7EFC5;
 }
 
-/*Listado de Imágenes*/
+/*Listado de Imágenes
 
 .listadoImagenes{
     margin: 10px 30px;
@@ -318,7 +314,7 @@ font-family: 'Montserrat Subrayada', sans-serif;
     height: 150px;
 }
 
-/*Platillos Index*/
+/*Platillos Index
 
 .listadoPlatillos{
     margin: 10px 5px;
@@ -334,7 +330,7 @@ font-family: 'Montserrat Subrayada', sans-serif;
     height: 175px;
 }
 
-/* Genéricos */
+/* Genéricos 
 
 legend{
     margin: 10px 20px;
@@ -368,4 +364,14 @@ h4{
     font-size: 15px;
     color: black;
     margin: 5px 5px;
+}
+*/
+
+.sectionTitle {
+    opacity: .6;
+    margin-bottom: 12px;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Great Vibes', cursive;
+    line-height: 1.8;
 }
