@@ -367,7 +367,9 @@ h4{
 }
 */
 
-.sectionTitle {
+
+
+.sectionTitle{
     opacity: .6;
     margin-bottom: 12px;
     text-align: center;
@@ -375,3 +377,37 @@ h4{
     font-family: 'Great Vibes', cursive;
     line-height: 1.8;
 }
+
+.imagenLista{
+    height: 110px;
+    width: 150px;
+}
+
+.imagenConsulta{
+    height: 375px;
+    width: 500px;
+}
+
+.form-control{
+    background-color: rgba(0,0,0,.1);
+}
+
+.backgroundPreguntas{
+    background-color: rgba(0,0,0,.1);
+}
+
+.imagenTienda{
+    height: 250px;
+    width: 100%;
+}
+
+.list-group-item.active{
+    border-color: rgba(0,0,0,.1);
+    color: black;
+    background-color: rgba(0,0,0,.1);
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
