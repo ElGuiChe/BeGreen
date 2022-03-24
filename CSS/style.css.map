@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,EAAE;CACb;;AAKD,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,YAAY;CAC5B;;AAED,AAAA,aAAa,CAAA;EACT,OAAO,EAAE,EAAE;EACX,aAAa,EAAE,IAAI;EACnB,UAAU,EAAE,MAAM;EAClB,SAAS,EAAE,IAAI;EACf,WAAW,EAAE,kCAAkC;EAC/C,WAAW,EAAE,GAAG;CACnB",
+    "sources": [
+        "../SCSS/style.scss",
+        "../SCSS/_typo.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
