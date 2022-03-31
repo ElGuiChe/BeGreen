@@ -16,6 +16,29 @@ body{
     margin-bottom: 12px;
     text-align: center;
     font-size: 45px;
-    font-family: font-family 'Great Vibes', cursive;
+    font-family: 'Great Vibes', cursive;
     line-height: 1.8;
 }
+
+/*Extend*/
+
+  .btn  {
+    width: 100px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 2px auto;
+    border-radius: 2px;
+    color: #FFFFFF;
+    border-color: #0d6efd;
+  }
+  
+  .btn-panaderia  {
+    @extend .btn;
+    background-color: red;
+  }
+  
+  .btn-entrada  {
+    @extend .btn;
+    background-color: green;
+    color: white;
+  }
