@@ -59,7 +59,7 @@
 }
 
 .hero-image {
-  background-image: url("/imagenes/imagenTiendas2.png");
+  background-image: url("../imagenes/imagenTiendas2.png");
   background-color: #cccccc;
   height: 120px;
   background-position: center;
