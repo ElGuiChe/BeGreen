@@ -1,44 +1,24 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0%;
-}
+/*Reset y tipografías*/
+@import "./base/reset";
+@import "./base/typo";
 
-@import "typo";
+/*Secciones compartidas*/
+@import "./layout/footer";
+@import "./layout/forms";
+@import "./layout/header";
 
+/*Variables*/
+@import "./utilities/variables";
+
+/*Estilos HTML*/
+@import "./views/consultas";
+@import "./views/index";
+@import "./views/tiendas";
 
 body{
     font-family: font-regular;
 }
 
-.sectionTitle{
-    opacity: .6;
-    margin-bottom: 12px;
-    text-align: center;
-    font-size: 45px;
-    font-family: 'Great Vibes', cursive;
-    line-height: 1.8;
+.pt-7 {
+  padding-top: 7rem!important;
 }
-
-/*Extend*/
-
-  .btn  {
-    width: 100px;
-    text-align: center;
-    padding: 5px 0;
-    margin: 2px auto;
-    border-radius: 2px;
-    color: #FFFFFF;
-    border-color: #0d6efd;
-  }
-  
-  .btn-panaderia  {
-    @extend .btn;
-    background-color: red;
-  }
-  
-  .btn-entrada  {
-    @extend .btn;
-    background-color: green;
-    color: white;
-  }

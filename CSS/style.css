@@ -1,12 +1,52 @@
+@charset "UTF-8";
+/*Reset y tipografías*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
-  margin: 0%;
+  margin: 0;
 }
 
-body {
-  font-family: font-regular;
+/*Secciones compartidas*/
+.footer {
+  background-color: #282828;
+  color: white;
+}
+
+.socialIcon {
+  color: white;
+}
+
+/*Navbar*/
+.bg-light2 {
+  background-color: white;
+  opacity: 1;
+}
+
+/*Variables*/
+/*Estilos HTML*/
+.list-group-item.active {
+  border-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.backgroundPreguntas {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.imagenConsulta {
+  height: 375px;
+  width: 500px;
+}
+
+.imagenLista {
+  height: 110px;
+  width: 150px;
 }
 
 .sectionTitle {
@@ -18,23 +58,40 @@ body {
   line-height: 1.8;
 }
 
-/*Extend*/
-.btn, .btn-panaderia, .btn-entrada {
-  width: 100px;
+.hero-image {
+  background-image: url("/imagenes/imagenTiendas2.png");
+  background-color: #cccccc;
+  height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
   text-align: center;
-  padding: 5px 0;
-  margin: 2px auto;
-  border-radius: 2px;
-  color: #FFFFFF;
-  border-color: #0d6efd;
-}
-
-.btn-panaderia {
-  background-color: red;
-}
-
-.btn-entrada {
-  background-color: green;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   color: white;
+}
+
+.h3-p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 0;
+  font-size: calc(1.3rem + .6vw);
+  display: block;
+}
+
+body {
+  font-family: font-regular;
+}
+
+.pt-7 {
+  padding-top: 7rem !important;
 }
 /*# sourceMappingURL=style.css.map */
