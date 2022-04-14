@@ -17,10 +17,20 @@
   color: white;
 }
 
+.logoFooter {
+  border-radius: 110px 1px 110px 1px;
+  border: solid #BADA55;
+}
+
 /*Navbar*/
 .bg-light2 {
   background-color: white;
   opacity: 1;
+}
+
+.logoNav {
+  border-radius: 30px 1px 30px 1px;
+  border: solid #BADA55 2px;
 }
 
 /*Variables*/
@@ -41,7 +51,7 @@
 
 .imagenConsulta {
   height: 375px;
-  width: 500px;
+  width: 100%;
 }
 
 .imagenLista {
@@ -56,6 +66,45 @@
   font-size: 45px;
   font-family: 'Great Vibes', cursive;
   line-height: 1.8;
+}
+
+.mainIndex {
+  background-image: url("../../imagenes/Background3.png");
+  background-color: #cccccc;
+  background-repeat: repeat;
+}
+
+.card-img-top2 {
+  border-radius: 140px 1px 140px 1px;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+}
+
+.card2 {
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card2:hover .card-img-top2 {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.btnBanner {
+  border-radius: 100%;
+  height: 10px !important;
+  width: 10px !important;
+  border-top: 0px !important;
+  border-bottom: 0px !important;
+}
+
+.btnBanner:hover {
+  background-color: #BADA55;
 }
 
 .hero-image {
