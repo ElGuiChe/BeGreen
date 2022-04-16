@@ -33,6 +33,33 @@
   border: solid #BADA55 2px;
 }
 
+.navLink {
+  position: relative;
+  padding-bottom: 0px;
+}
+
+.navLink::before {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: #BADA55;
+  position: absolute;
+  left: 0px;
+  bottom: -0.2rem;
+  -webkit-transition: .4s ease-out;
+  transition: .4s ease-out;
+}
+
+.navLink:hover::before {
+  width: 100%;
+}
+
+@media only screen and (max-width: 720px) {
+  .navLink:hover::before {
+    width: 0%;
+  }
+}
+
 /*Variables*/
 /*Estilos HTML*/
 .list-group-item.active {
@@ -69,7 +96,7 @@
 }
 
 .mainIndex {
-  background-image: url("../../imagenes/Background3.png");
+  background-image: url("../imagenes/Background3.png");
   background-color: #cccccc;
   background-repeat: repeat;
 }
