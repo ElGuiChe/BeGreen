@@ -29,7 +29,7 @@
     width: 100%;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
     .navLink:hover::before{
         width: 0%;
     }
