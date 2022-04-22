@@ -62,6 +62,16 @@
 
 /*Variables*/
 /*Estilos HTML*/
+.hero-image2 {
+  background-image: url("../imagenes/imagenConsultas2.jpg");
+  background-color: #cccccc;
+  height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .list-group-item.active {
   border-color: rgba(0, 0, 0, 0.1);
   color: black;
@@ -78,7 +88,9 @@
 
 .imagenConsulta {
   height: 375px;
-  width: 100%;
+  width: 80%;
+  display: block;
+  margin: auto;
 }
 
 .imagenLista {
@@ -145,7 +157,7 @@
 
 .precio {
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
 }
 
