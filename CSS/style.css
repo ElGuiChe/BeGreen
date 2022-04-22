@@ -192,8 +192,9 @@
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 0;
-  font-size: calc(1.3rem + .6vw);
+  font-size: calc(1rem + .5vw);
   display: block;
+  overflow-wrap: break-word;
 }
 
 body {
