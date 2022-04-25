@@ -1,13 +1,9 @@
 @charset "UTF-8";
-/*Reset y tipografías*/
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
+/*Reset, tipografías y variables*/
+/*Tipografías*/
+/*Colores*/
 /*Secciones compartidas*/
+/*Estilo Footer*/
 .footer {
   background-color: #282828;
   color: white;
@@ -19,10 +15,10 @@
 
 .logoFooter {
   border-radius: 110px 1px 110px 1px;
-  border: solid #BADA55;
+  border: solid #bada55;
 }
 
-/*Navbar*/
+/*Estilos Navbar*/
 .bg-light2 {
   background-color: white;
   opacity: 1;
@@ -30,9 +26,10 @@
 
 .logoNav {
   border-radius: 30px 1px 30px 1px;
-  border: solid #BADA55 2px;
+  border: solid #bada55 2px;
 }
 
+/*Animación Navbar*/
 .navLink {
   position: relative;
   padding-bottom: 0px;
@@ -42,7 +39,7 @@
   content: "";
   height: 3px;
   width: 0%;
-  background-color: #BADA55;
+  background-color: #bada55;
   position: absolute;
   left: 0px;
   bottom: -0.2rem;
@@ -60,7 +57,6 @@
   }
 }
 
-/*Variables*/
 /*Estilos HTML*/
 .hero-image2 {
   background-image: url("../imagenes/imagenConsultas2.jpg");
@@ -236,6 +232,13 @@
   line-height: 0;
   font-size: calc(.6rem + .8vw);
   display: block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {

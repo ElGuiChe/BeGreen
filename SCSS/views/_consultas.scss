@@ -1,3 +1,5 @@
+/*Estilos Consultas.html*/
+
 .hero-image2 {
     background-image: url("../imagenes/imagenConsultas2.jpg");
     background-color: #cccccc;
@@ -21,12 +23,12 @@
 }
 
 .backgroundPreguntas{
-    background-color: rgba(0,0,0,.1);
+    background-color: $backGris;
     padding-bottom: calc(var(--bs-gutter-x) * .5);
 }
 
 .form-control{
-    background-color: rgba(0,0,0,.1);
+    background-color: $backGris;
 }
 
 .imagenConsulta{
@@ -52,20 +54,20 @@
     &.collapsed{
         color: black;
         font-weight: 800;
-        background-color: rgba(0, 0, 0, 0.1);
-        border-color: solid rgba(0, 0, 0, 0.1);  
+        background-color: $backGris;
+        border-color: solid $backGris;  
     }
   
     &:not(.collapsed) {
         color: black;
         font-weight: 800;
-        background-color: rgba(0, 0, 0, 0.1);
-        border-color: solid rgba(0, 0, 0, 0.1);
+        background-color: $backGris;
+        border-color: solid $backGris;
     }
   
     &::after {
-        background-image: rgba(0, 0, 0, 0.1);
-        border-color: solid rgba(0, 0, 0, 0.1);
+        background-image: $backGris;
+        border-color: solid $backGris;
       }
     }
 
@@ -74,7 +76,7 @@
     }
 
 .accordion-body {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: $backGrisOscuro;
     padding: 1rem 1.25rem;
     font-weight: 600;
 }

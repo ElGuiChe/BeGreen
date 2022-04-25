@@ -1,19 +1,22 @@
-/*Reset y tipografías*/
+/*Reset, tipografías y variables*/
 @import "./base/reset";
 @import "./base/typo";
+@import "./base/variables";
 
 /*Secciones compartidas*/
 @import "./layout/footer";
-@import "./layout/forms";
 @import "./layout/header";
-
-/*Variables*/
-@import "./utilities/variables";
 
 /*Estilos HTML*/
 @import "./views/consultas";
 @import "./views/index";
 @import "./views/tiendas";
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 body{
     font-family: font-regular;

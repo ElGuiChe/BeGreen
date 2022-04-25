@@ -1,4 +1,5 @@
-/*Navbar*/
+/*Estilos Navbar*/
+
 .bg-light2 {
     background-color: white;
     opacity: 1;
@@ -6,8 +7,10 @@
 
 .logoNav{
     border-radius: 30px 1px 30px 1px;
-    border: solid #BADA55 2px;
+    border: solid $colorVerde 2px;
 }
+
+/*Animación Navbar*/
 
 .navLink{
     position: relative;
@@ -18,7 +21,7 @@
     content: "";
     height: 3px;
     width: 0%;
-    background-color: #BADA55;
+    background-color: $colorVerde;
     position: absolute;
     left: 0px;
     bottom: -0.2rem;

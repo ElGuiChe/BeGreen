@@ -1,5 +1,7 @@
+/*Estilo Footer*/
+
 .footer{
-    background-color:#282828;
+    background-color: $backFooter;
     color: white;
 }
 
@@ -9,5 +11,5 @@
 
   .logoFooter{
     border-radius: 110px 1px 110px 1px;
-    border: solid #BADA55;
+    border: solid $colorVerde;
 }
