@@ -5,19 +5,19 @@
     opacity: 1;
 }
 
-.logoNav{
+.logoNav {
     border-radius: 30px 1px 30px 1px;
     border: solid $colorVerde 2px;
 }
 
 /*Animación Navbar*/
 
-.navLink{
+.navLink {
     position: relative;
     padding-bottom: 0px;
 }
 
-.navLink::before{
+.navLink::before {
     content: "";
     height: 3px;
     width: 0%;
@@ -28,13 +28,12 @@
     transition: .4s ease-out;
 }
 
-.navLink:hover::before{
+.navLink:hover::before {
     width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
-    .navLink:hover::before{
+    .navLink:hover::before {
         width: 0%;
     }
 }
-

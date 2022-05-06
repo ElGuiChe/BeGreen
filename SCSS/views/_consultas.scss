@@ -8,37 +8,37 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
-  
-.list-group-item.active{
-    border-color: rgba(0,0,0,.1);
-    color: black;
-    background-color: rgba(0,0,0,.1);
 }
 
-.parrafoExplicativo{
+.list-group-item.active {
+    border-color: rgba(0, 0, 0, 0.1);
+    color: black;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.parrafoExplicativo {
     font-weight: 700;
     font-size: 18px;
     text-align: justify;
 }
 
-.backgroundPreguntas{
+.backgroundPreguntas {
     background-color: $backGris;
-    padding-bottom: calc(var(--bs-gutter-x) * .5);
+    padding-bottom: calc(var(--bs-gutter-x) * 0.5);
 }
 
-.form-control{
+.form-control {
     background-color: $backGris;
 }
 
-.imagenConsulta{
+.imagenConsulta {
     height: 375px;
     width: 80%;
     display: block;
     margin: auto;
 }
 
-.imagenLista{
+.imagenLista {
     height: 110px;
     width: 150px;
 }
@@ -46,38 +46,36 @@
 /*Botones acordión preguntas frecuentes*/
 
 .accordion-button {
-    
-    &:focus{
+    &:focus {
         box-shadow: 0 0 0 0;
     }
 
-    &.collapsed{
+    &.collapsed {
         color: black;
         font-weight: 800;
         background-color: $backGris;
-        border-color: solid $backGris;  
+        border-color: solid $backGris;
     }
-  
+
     &:not(.collapsed) {
         color: black;
         font-weight: 800;
         background-color: $backGris;
         border-color: solid $backGris;
     }
-  
+
     &::after {
         background-image: $backGris;
         border-color: solid $backGris;
-      }
     }
+}
 
-    .accordion-button:not(.collapsed)::after{
-        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='0 0 0 0'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
-    }
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='0 0 0 0'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>");
+}
 
 .accordion-body {
     background-color: $backGrisOscuro;
     padding: 1rem 1.25rem;
     font-weight: 600;
 }
-

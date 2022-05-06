@@ -1,107 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Este es el sitio web de comida saludable de bajo impacto ambiental">
-    <meta name="keywords"  content="COMIDA, SALUDABLE, GREE, VERDE, NATURAL">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./CSS/style.css">
-    <title>Be Green</title>
-    <link rel="icon" type="image/x-icon" href="/begreen/imagenes/logo.png">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Este es el sitio web de comida saludable de bajo impacto ambiental" />
+  <meta name="keywords" content="COMIDA, SALUDABLE, GREE, VERDE, NATURAL" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="./CSS/style.css" />
+  <title>Be Green</title>
+  <link rel="icon" type="image/x-icon" href="/begreen/imagenes/logo.png" />
 </head>
 
 <body>
-    <!--Navbar-->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light2">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"><img class="logoNav"src="./imagenes/logo3.png" alt="Logo Be Green"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                  <a class="nav-link active navLink" aria-current="page" href="./index.html">Productos</a>
-                  <a class="nav-link navLink" href="./tiendas.html">Tiendas</a>
-                  <a class="nav-link navLink" href="./consultas.html">Preguntas Frecuentes</a>
-              </div>
-          </div>
+  <!--Navbar-->
+  <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light2">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html"><img class="logoNav" src="./imagenes/logo3.png"
+          alt="Logo Be Green" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active navLink" aria-current="page" href="./index.html">Productos</a>
+          <a class="nav-link navLink" href="./tiendas.html">Tiendas</a>
+          <a class="nav-link navLink" href="./consultas.html">Preguntas Frecuentes</a>
+        </div>
       </div>
+    </div>
   </nav>
 
-    <!--Imagen-->
+  <!--Imagen-->
 
-      <div class="container-fluid pt-7">
-        <div class="hero-image">
-          <div class="hero-text">
-            <p>Tiendas</p>
-            <h3 class="h3-p">ENCUÉNTRANOS</h3>
-          </div>
+  <div class="container-fluid pt-7">
+    <div class="hero-image">
+      <div class="hero-text">
+        <p>Tiendas</p>
+        <h3 class="h3-p">ENCUÉNTRANOS</h3>
+      </div>
+    </div>
+  </div>
+
+  <!--Mapa y Tiendas-->
+  <main class="container mt-3">
+    <div class="row">
+      <!--Listado de tiendas-->
+      <div class="col-md-4 mr-2 mt-2">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-lasCondes-list" data-bs-toggle="list"
+            href="#lasCondes" role="tab" aria-controls="list-lasCondes">Las Condes</a>
+          <a class="list-group-item list-group-item-action" id="list-laReina-list" data-bs-toggle="list" href="#laReina"
+            role="tab" aria-controls="list-laReina">La Reina</a>
+          <a class="list-group-item list-group-item-action" id="list-loBarnechea-list" data-bs-toggle="list"
+            href="#list-loBarnechea" role="tab" aria-controls="list-loBarnechea">Lo Barnechea</a>
+          <a class="list-group-item list-group-item-action" id="list-providencia-list" data-bs-toggle="list"
+            href="#list-providencia" role="tab" aria-controls="list-providencia">Providencia</a>
         </div>
       </div>
 
-    <!--Mapa y Tiendas-->
-    <main class="container mt-3">
-            <div class="row">
-
-                 <!--Listado de tiendas-->
-                <div class="col-md-4 mr-2 mt-2">
-                  <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item list-group-item-action active" id="list-lasCondes-list" data-bs-toggle="list" href="#lasCondes" role="tab" aria-controls="list-lasCondes">Las Condes</a>
-                    <a class="list-group-item list-group-item-action" id="list-laReina-list" data-bs-toggle="list" href="#laReina" role="tab" aria-controls="list-laReina">La Reina</a>
-                    <a class="list-group-item list-group-item-action" id="list-loBarnechea-list" data-bs-toggle="list" href="#list-loBarnechea" role="tab" aria-controls="list-loBarnechea">Lo Barnechea</a>
-                    <a class="list-group-item list-group-item-action" id="list-providencia-list" data-bs-toggle="list" href="#list-providencia" role="tab" aria-controls="list-providencia">Providencia</a>
-                  </div>
-                </div>
-
-                <!--Mapa-->
-                <div class="col-md-8 mt-2">
-                  <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active" id="lasCondes" role="tabpanel" aria-labelledby="list-lasCondes-list"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5609.9873971684165!2d-70.58133251961532!3d-33.40189939781247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf28a4680247%3A0x278141c17f8ab414!2sParque%20Arauco!5e0!3m2!1ses!2scl!4v1647979755667!5m2!1ses!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-                    <div class="tab-pane fade" id="laReina" role="tabpanel" aria-labelledby="list-laReina-list"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.8204178019682!2d-70.54299868569927!3d-33.42792598078038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ce629aa434d7%3A0x87b00f682be79f4e!2sPortal%20La%20Reina!5e0!3m2!1ses!2scl!4v1647981203743!5m2!1ses!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-                    <div class="tab-pane fade" id="list-loBarnechea" role="tabpanel" aria-labelledby="list-loBarnechea-list"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3332.719643592492!2d-70.52291968570206!3d-33.35227348080211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cbd961935497%3A0x55454cc9ec4860c3!2sEl%20Rodeo%2012850%2C%20Lo%20Barnechea%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1647981574144!5m2!1ses!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-                    <div class="tab-pane fade" id="list-providencia" role="tabpanel" aria-labelledby="list-providencia-list"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.9998724345483!2d-70.61211018569945!3d-33.42324768078173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf65ffabf411%3A0x6b3fb67d1f7a0420!2sAv.%20Nueva%20Providencia%202155%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1647981652387!5m2!1ses!2scl" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-                  </div>
-                </div>
-            </div>
-    </main>
-
-      <!--Footer-->
-      <footer class="container-fluid mt-2 footer">
-        <div class="row justify-content-around">
-    
-           <!--Ubicaciones-->
-          <div class="col-md-4 text-start mb-3 mt-2">
-            <h3>Ubicaciones</h3>
-            <p><span style="font-weight:bold">Las Condes</span> Av. Pdte. Kennedy 5413, Las Condes, Región Metropolitana</p>
-            <p><span style="font-weight:bold">La Reina</span> Av. Francisco Bilbao 8750, Las Condes, La Reina, Región Metropolitana</p>
-            <p><span style="font-weight:bold">Lo Barnechea</span> El Rodeo 12850, Lo Barnechea, Región Metropolitana</p>
-            <p><span style="font-weight:bold">Providencia</span> Av. Nueva Providencia 2155, Providencia, Región Metropolitana</p>
+      <!--Mapa-->
+      <div class="col-md-8 mt-2">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="lasCondes" role="tabpanel" aria-labelledby="list-lasCondes-list">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5609.9873971684165!2d-70.58133251961532!3d-33.40189939781247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf28a4680247%3A0x278141c17f8ab414!2sParque%20Arauco!5e0!3m2!1ses!2scl!4v1647979755667!5m2!1ses!2scl"
+              width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
           </div>
-    
-          <!--Logo-->
-          <div class="col-md-4 text-center mb-3 mt-2 prueba">
-            <img class="logoFooter" src="./imagenes/logo.png" alt="Logo BeGreen">
+          <div class="tab-pane fade" id="laReina" role="tabpanel" aria-labelledby="list-laReina-list">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.8204178019682!2d-70.54299868569927!3d-33.42792598078038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ce629aa434d7%3A0x87b00f682be79f4e!2sPortal%20La%20Reina!5e0!3m2!1ses!2scl!4v1647981203743!5m2!1ses!2scl"
+              width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
           </div>
-    
-          <!--Redes-->
-          <div class="col-md-4  mt-2 text-end">
-            <h3>Síguenos en:</h3>
-            <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook fs-2 socialIcon"></i></a>
-            <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram fs-2 socialIcon"></i></a>
-            <p><span style="font-weight:bold">#BEGREENMAKESYOUHAPPY</span>
+          <div class="tab-pane fade" id="list-loBarnechea" role="tabpanel" aria-labelledby="list-loBarnechea-list">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3332.719643592492!2d-70.52291968570206!3d-33.35227348080211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cbd961935497%3A0x55454cc9ec4860c3!2sEl%20Rodeo%2012850%2C%20Lo%20Barnechea%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1647981574144!5m2!1ses!2scl"
+              width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="tab-pane fade" id="list-providencia" role="tabpanel" aria-labelledby="list-providencia-list">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.9998724345483!2d-70.61211018569945!3d-33.42324768078173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf65ffabf411%3A0x6b3fb67d1f7a0420!2sAv.%20Nueva%20Providencia%202155%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1647981652387!5m2!1ses!2scl"
+              width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
           </div>
         </div>
-        </footer>
+      </div>
+    </div>
+  </main>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-</script>
+  <!--Footer-->
+  <footer class="container-fluid mt-2 footer">
+    <div class="row justify-content-around">
+      <!--Ubicaciones-->
+      <div class="col-md-4 text-start mb-3 mt-2">
+        <h3>Ubicaciones</h3>
+        <p>
+          <span style="font-weight: bold">Las Condes</span> Av. Pdte. Kennedy
+          5413, Las Condes, Región Metropolitana
+        </p>
+        <p>
+          <span style="font-weight: bold">La Reina</span> Av. Francisco Bilbao
+          8750, Las Condes, La Reina, Región Metropolitana
+        </p>
+        <p>
+          <span style="font-weight: bold">Lo Barnechea</span> El Rodeo 12850,
+          Lo Barnechea, Región Metropolitana
+        </p>
+        <p>
+          <span style="font-weight: bold">Providencia</span> Av. Nueva
+          Providencia 2155, Providencia, Región Metropolitana
+        </p>
+      </div>
 
+      <!--Logo-->
+      <div class="col-md-4 text-center mb-3 mt-2 prueba">
+        <img class="logoFooter" src="./imagenes/logo.png" alt="Logo BeGreen" />
+      </div>
+
+      <!--Redes-->
+      <div class="col-md-4 mt-2 text-end">
+        <h3>Síguenos en:</h3>
+        <a href="https://www.facebook.com" target="_blank"><i class="bi bi-facebook fs-2 socialIcon"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram fs-2 socialIcon"></i></a>
+        <p><span style="font-weight: bold">#BEGREENMAKESYOUHAPPY</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>

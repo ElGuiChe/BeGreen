@@ -1,5 +1,4 @@
 /*Reset, tipografías y variables*/
-@import "./base/reset";
 @import "./base/typo";
 @import "./base/variables";
 
@@ -12,16 +11,16 @@
 @import "./views/index";
 @import "./views/tiendas";
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-body{
-    font-family: font-regular;
+body {
+  font-family: font-regular;
 }
 
 .pt-7 {
-  padding-top: 7rem!important;
+  padding-top: 7rem !important;
 }

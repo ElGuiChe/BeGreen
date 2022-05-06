@@ -58,6 +58,7 @@
 }
 
 /*Estilos HTML*/
+/*Estilos Consultas.html*/
 .hero-image2 {
   background-image: url("../imagenes/imagenConsultas2.jpg");
   background-color: #cccccc;
@@ -82,7 +83,7 @@
 
 .backgroundPreguntas {
   background-color: rgba(0, 0, 0, 0.1);
-  padding-bottom: calc(var(--bs-gutter-x) * .5);
+  padding-bottom: calc(var(--bs-gutter-x) * 0.5);
 }
 
 .form-control {
@@ -136,12 +137,13 @@
   font-weight: 600;
 }
 
+/*Estilos index.html*/
 .sectionTitle {
-  opacity: .6;
+  opacity: 0.6;
   margin-bottom: 12px;
   text-align: center;
   font-size: 45px;
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
   line-height: 1.8;
 }
 
@@ -153,16 +155,16 @@
 
 .card-img-top2 {
   border-radius: 140px 1px 140px 1px;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
-  transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 .card2 {
   overflow: hidden;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   padding-left: 0;
   padding-right: 0;
 }
@@ -181,7 +183,7 @@
 }
 
 .btnBanner:hover {
-  background-color: #BADA55;
+  background-color: #bada55;
 }
 
 .card-title2 {
@@ -190,7 +192,7 @@
 }
 
 .card-text2 {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .precio {
@@ -202,9 +204,10 @@
 .btn2 {
   border-radius: 20px;
   text-align: center;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
+/*Estilos tiendas.html*/
 .hero-image {
   background-image: url("../imagenes/imagenTiendas2.png");
   background-color: #cccccc;
