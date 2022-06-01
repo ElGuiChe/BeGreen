@@ -12,10 +12,10 @@ class Entrada {
     }
 }
 
-const entrada1 = new Entrada(1, "Ceviche de camarón", "entrada", "5.490", "./imagenes/Entradas/ceviche-camarones.jpg", "Ceviche de camaron", "Ácido y picaron");
-const entrada2 = new Entrada(2, "Ensalada thai", "entrada", "3.490", "./imagenes/Entradas/ensalada-thai.jpg", "Ensalada Thai", "Con quinoa 3 colores");
-const entrada3 = new Entrada(3, "Tártaro de atún", "entrada", "8.690", "./imagenes/Entradas/tartaro-atun.jpg", "Tártaro de atún","250g");
-const entrada4 = new Entrada(4, "Carpaccio de salmón", "entrada", "4.990", "./imagenes/Entradas/carpaccio-salmon.jpg", "Carpaccio de salmón","100g");
+const entrada1 = new Entrada("e1", "Ceviche de camarón", "entrada", "5.490", "./imagenes/Entradas/ceviche-camarones.jpg", "Ceviche de camaron", "Ácido y picaron");
+const entrada2 = new Entrada("e2", "Ensalada thai", "entrada", "3.490", "./imagenes/Entradas/ensalada-thai.jpg", "Ensalada Thai", "Con quinoa 3 colores");
+const entrada3 = new Entrada("e3", "Tártaro de atún", "entrada", "8.690", "./imagenes/Entradas/tartaro-atun.jpg", "Tártaro de atún","250g");
+const entrada4 = new Entrada("e4", "Carpaccio de salmón", "entrada", "4.990", "./imagenes/Entradas/carpaccio-salmon.jpg", "Carpaccio de salmón","100g");
 
 class Panaderia {
     constructor(id, nombre, categoria, precio, imagen, alt, descripcion) {
@@ -29,10 +29,10 @@ class Panaderia {
     }
 }
 
-const panaderia1 = new Panaderia(1, "Baguette", "panaderia", "890", "./imagenes/Panadería/baguette.jpg", "Ceviche de camaron", "160g");
-const panaderia2 = new Panaderia(2, "Baguette aceitunas negras", "panaderia", "890", "./imagenes/Panadería/baguette-aceitunas.jpg", "Baguette con aceitunas", "160g");
-const panaderia3 = new Panaderia(3, "Pan integral", "panaderia", "3.290", "./imagenes/Panadería/integral.jpg", "Pan integral","600g");
-const panaderia4 = new Panaderia(4, "Ciabatta", "panaderia", "690", "./imagenes/Panadería/ciabatta.jpg", "Pan ciabatta","180g");
+const panaderia1 = new Panaderia("p1", "Baguette", "panaderia", "890", "./imagenes/Panadería/baguette.jpg", "Ceviche de camaron", "160g");
+const panaderia2 = new Panaderia("p2", "Baguette aceitunas negras", "panaderia", "890", "./imagenes/Panadería/baguette-aceitunas.jpg", "Baguette con aceitunas", "160g");
+const panaderia3 = new Panaderia("p3", "Pan integral", "panaderia", "3.290", "./imagenes/Panadería/integral.jpg", "Pan integral","600g");
+const panaderia4 = new Panaderia("p4", "Ciabatta", "panaderia", "690", "./imagenes/Panadería/ciabatta.jpg", "Pan ciabatta","180g");
 
 const entradas = [entrada1, entrada2, entrada3, entrada4];
 const panaderias = [panaderia1, panaderia2, panaderia3, panaderia4];
@@ -58,9 +58,9 @@ const renderEntradas = (array) => {
             <p class="card-text card-text2">${Entrada.descripcion}</p>
             <hr>
         <div class="container">
-            <div class="row align-items-baseline">
+            <div id="entrada${Entrada.id}" class="row align-items-baseline">
             <p class="col-5 precio">$${Entrada.precio}</p>
-            <a href="" class="col-7 btn btn-dark btn2">AGREGAR <i class="bi bi-basket"></i></a>
+            <a href="" id="${Entrada.id}" class="col-7 btn btn-dark btn2">AGREGAR <i class="bi bi-basket"></i></a>
             </div>
         </div>
         </div>
@@ -83,7 +83,7 @@ const renderPanaderias = (array) => {
         <div class="container">
             <div class="row align-items-baseline">
             <p class="col-5 precio">$${Panaderia.precio}</p>
-            <a href="" class="col-7 btn btn-dark btn2">AGREGAR <i class="bi bi-basket"></i></a>
+            <a href="" id="${Panaderia.id}" class="col-7 btn btn-dark btn2">AGREGAR <i class="bi bi-basket"></i></a>
             </div>
         </div>
         </div>
@@ -92,7 +92,17 @@ const renderPanaderias = (array) => {
     }
 }
 
-
 renderEntradas(Entrada);
 renderPanaderias(Panaderia);
 
+let aID = document.getElementById("e1");
+console.log(aID);
+
+let boton = document.getElementById("e1")
+boton.onclick = (e) => {
+    e.preventDefault();
+    console.log("El Click Funciona");
+    let a = document.getElementById("e1")
+    a.innerText = "GRACIAS!"
+    aID.append(a)
+}
