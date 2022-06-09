@@ -1,3 +1,7 @@
+//Declaración de variables
+const carrito = []
+
+
 //Declaración de objetos y arrays (Productos)
 
 class Entrada {
@@ -38,13 +42,11 @@ const entradas = [entrada1, entrada2, entrada3, entrada4];
 const panaderias = [panaderia1, panaderia2, panaderia3, panaderia4];
 const productos = [entradas, panaderias];
 
-//Modificación del DOM
+//Modificación del DOM - Añade las cards
 
 let divID = document.getElementById("productosEntradas");
-console.log(divID);
 
 let divID2 = document.getElementById("productosPanaderia");
-console.log(divID2);
 
 const renderEntradas = (array) => {
     for (const Entrada of entradas) {
@@ -92,17 +94,49 @@ const renderPanaderias = (array) => {
     }
 }
 
-renderEntradas(Entrada);
-renderPanaderias(Panaderia);
+renderEntradas(entradas);
+renderPanaderias(panaderias);
 
-let aID = document.getElementById("e1");
-console.log(aID);
+//Modificación del DOM - Carrito
 
-let boton = document.getElementById("e1")
-boton.onclick = (e) => {
-    e.preventDefault();
-    console.log("El Click Funciona");
-    let a = document.getElementById("e1")
-    a.innerText = "GRACIAS!"
-    aID.append(a)
+let trID = document.getElementById("idCarrito");
+
+const renderCarrito = (array) => {
+    for (const carrito of items){
+        let tr = document.createElement("tr")
+        tr.innerHTML = `<th scope="row"><img class="imgCarrito" src="${carrito.imagen}" alt="${carrito.alt}"></th>
+        <td>${carrito.nombre}</td>
+        <td>$${carrito.precio}</td>`
+        trID.append(tr);
+    }
 }
+
+
+//Operaciones de Carrito
+
+const Clickbutton = document.querySelectorAll (".btn2");
+Clickbutton.forEach (btn=>{
+    btn.addEventListener("click", addCarrito)
+})
+
+
+
+function addCarrito (e){
+    e.preventDefault();
+    const button = e.target.id;
+    const item = entradas.find (entradas => entradas.id === button) || panaderias.find (panaderias => panaderias.id === button);
+    carrito.push (item)
+    addToLocalStorage(carrito)
+}
+
+function addToLocalStorage (clave, valor){
+    localStorage.setItem("carrito", JSON.stringify(carrito))
+}
+
+window.onload = function() {
+    let storage = JSON.parse(localStorage.getItem("carrito"))
+    storage !== null ? storage.forEach(push): false
+    function push (item, index, storage){
+    storage[index = carrito.push(item) ]
+}}
+   
