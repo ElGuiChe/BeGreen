@@ -120,13 +120,25 @@ Clickbutton.forEach (btn=>{
 })
 
 
-
 function addCarrito (e){
     e.preventDefault();
     const button = e.target.id;
     const item = entradas.find (entradas => entradas.id === button) || panaderias.find (panaderias => panaderias.id === button);
-    carrito.push (item)
-    addToLocalStorage(carrito)
+    carrito.push (item);
+    addToLocalStorage(carrito);
+    Toastify({
+        text: "Hemos agregado " + item.nombre + " a tu carrito",
+        duration: 3000,
+        destination: "./carrito.html",
+        newWindow: false,
+        close: true,
+        gravity: "top",
+        position: "right",
+        stopOnFocus: true,
+        style: {
+          background: "#bada55",
+        },
+      }).showToast();
 }
 
 function addToLocalStorage (clave, valor){
