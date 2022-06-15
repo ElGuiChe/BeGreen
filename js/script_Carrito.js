@@ -55,7 +55,6 @@ botonBuy.addEventListener("click", (e) => {
     e.preventDefault();
     if (carrito.length == 0) {
         Swal.fire({
-            position: 'top-end',
             icon: 'warning',
             title: 'Tu carrito está vacio',
             showConfirmButton: false,
@@ -65,7 +64,6 @@ botonBuy.addEventListener("click", (e) => {
         localStorage.removeItem("carrito")
         carrito.splice(0, carrito.length);
         Swal.fire({
-            position: 'top-end',
             icon: 'success',
             title: '¡Gracias por tu compra!',
             showConfirmButton: false,
