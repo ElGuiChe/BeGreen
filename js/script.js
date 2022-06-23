@@ -151,4 +151,4 @@ window.onload = function() {
     function push (item, index, storage){
     storage[index = carrito.push(item) ]
 }}
-   
+
